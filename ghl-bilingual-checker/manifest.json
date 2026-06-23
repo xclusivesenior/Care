@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "GHL Bilingual SMS Checker",
+  "version": "1.0.0",
+  "description": "Adds a bar inside GoHighLevel that scans SMS / message text on the page and flags which messages are bilingual (English + Spanish) vs. English-only.",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_title": "GHL Bilingual SMS Checker"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["bar.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
