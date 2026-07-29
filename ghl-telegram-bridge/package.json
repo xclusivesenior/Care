@@ -1,0 +1,16 @@
+{
+  "name": "ghl-telegram-bridge",
+  "version": "1.0.0",
+  "description": "Zero-dependency bridge that receives GoHighLevel webhooks and posts formatted notifications (lead alerts + bilingual SMS audits) to a Telegram chat.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "chat-id": "node get-chat-id.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
