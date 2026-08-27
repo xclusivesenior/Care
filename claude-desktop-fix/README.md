@@ -20,6 +20,23 @@ So: retrying the installer will keep failing until the stale folder is gone.
 
 ---
 
+## Just fix it (one double-click)
+
+If you have reinstalled several times and keep landing on the same error,
+**stop reinstalling** — each attempt fails at the identical step, because
+nothing has removed the folder that is blocking it. Break the loop first:
+
+> Double-click **`Fix-Claude.cmd`** in this folder.
+
+It asks for administrator rights, clears the stale app-data store, restores
+your desktop shortcut if the app is still installed, tells you if it isn't,
+and offers to open the download page. Then install once more — that attempt
+is the one that works.
+
+The sections below explain what it does and cover the cases where it doesn't.
+
+---
+
 ## Fastest path (recommended)
 
 The `0x80073D05` failure only affects the **MSIX / Microsoft Store** flavour of
