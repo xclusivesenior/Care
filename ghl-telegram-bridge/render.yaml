@@ -1,0 +1,19 @@
+# Render blueprint. Point Render at this repo and it builds the service.
+# Secrets are marked sync:false so they are entered in the dashboard, never
+# committed here.
+services:
+  - type: web
+    name: ghl-telegram-bridge
+    runtime: node
+    rootDir: ghl-telegram-bridge
+    plan: free
+    buildCommand: "echo 'no dependencies to install'"
+    startCommand: "node server.js"
+    healthCheckPath: /
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: WEBHOOK_SECRET
+        sync: false

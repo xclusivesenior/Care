@@ -1,0 +1,33 @@
+# systemd unit for running the bridge on your own VPS.
+#
+#   sudo cp ghl-telegram-bridge.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now ghl-telegram-bridge
+#   systemctl status ghl-telegram-bridge
+#
+# Adjust User and WorkingDirectory to match where you cloned the repo.
+
+[Unit]
+Description=GHL to Telegram bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ghlbridge
+WorkingDirectory=/opt/Care/ghl-telegram-bridge
+# Secrets live in the git-ignored .env, which server.js reads on boot.
+EnvironmentFile=/opt/Care/ghl-telegram-bridge/.env
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=5
+
+# The service needs no write access and no privileges beyond binding a port.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadOnlyPaths=/opt/Care/ghl-telegram-bridge
+
+[Install]
+WantedBy=multi-user.target

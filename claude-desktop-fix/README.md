@@ -20,6 +20,29 @@ So: retrying the installer will keep failing until the stale folder is gone.
 
 ---
 
+## No files, no downloads — two lines to paste
+
+If you would rather not hunt for a file, open **PowerShell as Administrator**
+(`Win`+`X` → *Terminal (Admin)*) and paste this. It clears the blocking folder
+and opens the download page:
+
+```powershell
+Get-AppxPackage *Claude* | Remove-AppxPackage -EA 0; Remove-Item "$env:LOCALAPPDATA\Packages\*Claude*" -Recurse -Force -EA 0; if((Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager' -Name PendingFileRenameOperations -EA 0).PendingFileRenameOperations){'REBOOT FIRST, then run this again.'}else{'Cleared. Install now.'; Start-Process 'https://claude.ai/download'}
+```
+
+It prints one of two things. **`Cleared. Install now.`** means go ahead and
+install. **`REBOOT FIRST, then run this again.`** means a delete is queued for
+next boot and no install can succeed until you restart — reboot, paste it
+again, then install.
+
+Once Claude is installed, this second line puts the icon on your desktop:
+
+```powershell
+$e=(Get-ChildItem "$env:LOCALAPPDATA\AnthropicClaude" -Recurse -Filter claude.exe -EA 0|Select -First 1).FullName; if($e){$s=(New-Object -ComObject WScript.Shell).CreateShortcut("$env:USERPROFILE\Desktop\Claude.lnk");$s.TargetPath=$e;$s.Save();"Icon created."}else{"Not installed - run the repair line first."}
+```
+
+---
+
 ## Just fix it (one double-click)
 
 If you have reinstalled several times and keep landing on the same error,
