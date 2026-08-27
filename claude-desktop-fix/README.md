@@ -37,6 +37,31 @@ The sections below explain what it does and cover the cases where it doesn't.
 
 ---
 
+## Why the same error repeats every single time
+
+If you have reinstalled several times and got byte-identical errors, that is a
+signal, not bad luck. The usual cause is a **pending reboot**.
+
+When Windows cannot delete a locked file, it does not fail — it queues the
+delete for the next boot (`PendingFileRenameOperations`). Until you actually
+reboot, the old app-data folder is still there, so the next install hits
+`0x80073D05` again. And again. Reinstalling can never clear it; only a reboot
+can.
+
+`Repair-ClaudeDesktopInstall.ps1` now checks for this **before** doing any
+work and tells you to reboot first if a rename is queued. It also verifies at
+the end that the blocking folder is really gone, printing `PASS` or
+`INCOMPLETE` rather than a vague "Done", and writes a full transcript to
+`%TEMP%\ClaudeRepair-<timestamp>.log`.
+
+So the reliable order is:
+
+1. Run the repair (or `Fix-Claude.cmd`).
+2. **Reboot** — this is the step that is easy to skip and the one that matters.
+3. Install once.
+
+---
+
 ## Fastest path (recommended)
 
 The `0x80073D05` failure only affects the **MSIX / Microsoft Store** flavour of
