@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "chat-id": "node get-chat-id.js"
+    "chat-id": "node get-chat-id.js",
+    "test": "node test.js"
   },
   "engines": {
     "node": ">=18"

@@ -47,6 +47,20 @@ curl -X POST http://localhost:3000/ghl/notify \
 ```
 You should see the message appear in your Telegram chat.
 
+## 3b. Verify it works
+
+```bash
+npm test
+```
+
+Nine zero-dependency checks: the English / Spanish / bilingual classifier, the
+empty-text case, the SMS-field aliases, and the server's health route plus its
+400 and 404 guards. No token or network needed — the Telegram calls themselves
+are not exercised, so a green run means "parses and routes correctly", not
+"delivered to your chat". For delivery, use the `curl` above.
+
+---
+
 ## 4. Make it reachable by GHL
 
 GHL needs a public URL to call. Options:

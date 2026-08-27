@@ -39,12 +39,24 @@ function classify(text) {
   return { kind: "unclear", label: "❔ Unclear / too short" };
 }
 
+/* GHL exports name the SMS body inconsistently, so accept the usual keys.
+ * Reading only `text` would score a whole batch "unclear" and look like a
+ * finished audit rather than a payload mismatch. */
+function messageText(m) {
+  if (typeof m === "string") return m;
+  if (!m || typeof m !== "object") return "";
+  for (const key of ["text", "body", "message", "msg", "content"]) {
+    if (typeof m[key] === "string" && m[key].trim()) return m[key];
+  }
+  return "";
+}
+
 /* messages: [{ name?, text }] -> { summary, lines[], counts } */
 function audit(messages) {
   const counts = { bilingual: 0, english: 0, spanish: 0, unclear: 0 };
   const lines = [];
   (messages || []).forEach((m, i) => {
-    const text = typeof m === "string" ? m : m.text || "";
+    const text = messageText(m);
     const name = (typeof m === "object" && m.name) || `Message ${i + 1}`;
     const c = classify(text);
     counts[c.kind]++;
@@ -57,4 +69,4 @@ function audit(messages) {
   };
 }
 
-module.exports = { detect, classify, audit };
+module.exports = { detect, classify, audit, messageText };
