@@ -67,6 +67,38 @@ Reboot, then install again.
 
 ---
 
+## The desktop icon disappeared
+
+This is the same event as the error, not a second failure. `0x80073D05`
+usually hits during an **update**: Windows removes the existing install, then
+fails to write the replacement. Half-removed app, no icon.
+(`Repair-ClaudeDesktopInstall.ps1` also removes the package by design, so
+running it has the same visible effect until you reinstall.)
+
+Two 10-second checks first. If *every* desktop icon vanished, not just Claude,
+this has nothing to do with Claude: right-click the desktop → **View** →
+**Show desktop icons**. And check the Recycle Bin — if the `.lnk` is in there,
+just restore it.
+
+Otherwise, run:
+
+```powershell
+cd path\to\Care\claude-desktop-fix
+.\Restore-ClaudeDesktopShortcut.ps1
+```
+
+It reports which situation you are actually in and fixes the recoverable one:
+
+| Finding | What happens |
+| --- | --- |
+| `claude.exe` present under `%LOCALAPPDATA%\AnthropicClaude` | Only the shortcut was lost — the script recreates it on your desktop. |
+| Store package registered, no `.exe` path | Store builds have no fixed executable path to point a `.lnk` at. Launch from the Start menu and drag that entry to the desktop. |
+| Neither found | The app really is gone. Reinstall from <https://claude.ai/download>; with the broken package now cleared, the direct installer goes through. |
+
+No elevation needed, and it supports `-WhatIf`.
+
+---
+
 ## If it still fails
 
 Read the real error instead of guessing — the AppX log is far more specific
