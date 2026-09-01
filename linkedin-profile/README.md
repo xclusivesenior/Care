@@ -7,7 +7,8 @@ it in.
 
 | File | What it is |
 |---|---|
-| **README.md** (this file) | Do the steps in order |
+| **QUICK-START.md** | ⭐ Start here — the whole setup in ~20 min, with direct links |
+| **README.md** (this file) | The same steps with the reasoning behind each one |
 | **PROFILE-COPY.md** | Every text box, ready to copy and paste |
 | **PHOTO-GUIDE.md** | Which of your own photos to use, and which not to |
 | **images/** | The finished pictures — upload these as they are |
