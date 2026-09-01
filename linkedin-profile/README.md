@@ -101,8 +101,9 @@ Edit intro → **Contact info**:
 - Email: `info@xclusiveseniorcare.com`
 - Address: `12975 W. Okeechobee Rd., Units 2-4, Hialeah Gardens, FL 33018`
 
-The personal profile holds one address. **Both** locations go on the Company Page in
-the next step — that is what makes you findable in searches for either city.
+The personal profile holds one address. **Both** go on the Company Page in the next
+step — Hialeah Gardens (12975 W. Okeechobee Rd.) and Hialeah (705 E 8th Ave.) — and
+that is what makes you findable in searches for either city.
 
 ### 7. Create the Company Page — the piece that's actually missing
 A profile under `/in/` is LinkedIn's format for a *person*. A business belongs on a
@@ -161,17 +162,21 @@ Chromium automatically, or you can add the path to `CHROME_CANDIDATES` at the to
 
 ---
 
-## The one thing still missing
+## Two details worth a five-second look
 
-**The street address of the Hialeah location.** Everything else is confirmed and
-written in. Both banners, the About sections in both languages, the headline, the
-Experience entry and the Company Page all say *two locations* — but only the Hialeah
-Gardens street address is filled in, because the Hialeah one isn't recorded anywhere
-I could reach.
+Everything is filled in — there are no blanks left in PROFILE-COPY.md. Two items
+came from your **public listings** rather than from your own records, so confirm
+them before this goes live:
 
-Search `[HIALEAH ADDRESS]` in **PROFILE-COPY.md** — it appears in four places
-(English About, Spanish About, the facts table, and the Page's Locations list).
-Type the address in once you have it, or tell me and I'll fill it in for you.
+1. **The Hialeah center: 705 E 8th Ave., Hialeah, FL 33010, (305) 320-9820.**
+   Consistent across your public listings, and your Google Business Profile emails
+   confirm you run it as *Xclusive Senior Day Care Center II, Inc* — but I never
+   found it written in your own records, so give it a glance.
+
+2. **AHCA #9102 is the Hialeah Gardens license.** The Hialeah center is a separate
+   corporation with its own license number, which I don't have. So the copy now
+   states the license *next to the location it belongs to* instead of over both.
+   If you want II's number shown too, add it in the same spots.
 
 Separately, before posting any photo with a participant in it, read **PHOTO-GUIDE.md
 section 1** — that one is a HIPAA question, not a copy question.
