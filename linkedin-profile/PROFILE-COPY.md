@@ -5,9 +5,9 @@ your AHCA license, and your public listings). Nothing here is invented.
 
 If a detail changes, change it here first so every place stays consistent.
 
-> **One blank to fill:** the street address of the **Hialeah** location. Only the
-> Hialeah Gardens address is confirmed. Anywhere you see `[HIALEAH ADDRESS]`,
-> type it in — or delete that line and mention only Hialeah Gardens.
+> **One blank to fill:** the street address of the **Hialeah** location. The
+> Hialeah Gardens address is confirmed; the Hialeah one was never written down
+> anywhere I could reach. Anywhere you see `[HIALEAH ADDRESS]`, type it in.
 
 ---
 
@@ -18,8 +18,9 @@ If a detail changes, change it here first so every place stays consistent.
 | Legal name | XCLUSIVE SENIOR DAY CARE CENTER, INC |
 | Public / brand name | Xclusive Senior Care |
 | License | AHCA #9102 |
-| Address | 12975 W. Okeechobee Rd., Units 2, 3, 4, Hialeah Gardens, FL 33018 |
-| Second location | Hialeah, FL — `[HIALEAH ADDRESS]` |
+| Locations | **Two centers** |
+| Location 1 | 12975 W. Okeechobee Rd., Units 2, 3, 4, Hialeah Gardens, FL 33018 |
+| Location 2 | Hialeah, FL — `[HIALEAH ADDRESS]` |
 | Phone | (305) 820-0805 |
 | Fax | (305) 402-8509 |
 | Email | info@xclusiveseniorcare.com |
@@ -45,20 +46,20 @@ unprofessional thing on the page.
 
 ## 2. Headline
 
-*(LinkedIn limit: 220 characters. This one is 168.)*
+*(LinkedIn limit: 220 characters. This one is 185.)*
 
 ```
-Licensed Adult Day Care in Hialeah & Hialeah Gardens, FL | 100% Bilingual | RN On Site | Meals & Transportation Included | $0 with Medicaid Long-Term Care | (305) 820-0805
+Licensed Adult Day Care | 2 Locations in Hialeah & Hialeah Gardens, FL | 100% Bilingual | RN On Site | Meals & Transportation Included | $0 with Medicaid Long-Term Care | (305) 820-0805
 ```
 
 ---
 
 ## 3. About section — English
 
-*(LinkedIn limit: 2,600 characters. This one is about 1,450.)*
+*(LinkedIn limit: 2,600 characters. This one is about 1,420.)*
 
 ```
-Xclusive Senior Care is a licensed adult day care center serving families in Hialeah and Hialeah Gardens, Florida. AHCA License #9102.
+Xclusive Senior Care is a licensed adult day care center with two locations, serving families across Hialeah and Hialeah Gardens, Florida. AHCA License #9102.
 
 Every weekday we give older adults a place to spend the day with purpose, company and professional supervision — and we give their families the confidence to go to work knowing someone they trust is watching over their loved one.
 
@@ -77,11 +78,14 @@ Most of the families we serve pay $0 through Medicaid Long-Term Care. If you are
 100% BILINGUAL
 Our whole team speaks English and Spanish. No family is handed a form they cannot read, and no family is left out of a conversation about their own parent.
 
+OUR TWO LOCATIONS
+- Hialeah Gardens: 12975 W. Okeechobee Rd., Units 2-4, Hialeah Gardens, FL 33018
+- Hialeah: [HIALEAH ADDRESS]
+
 Monday to Friday, 9:00 AM to 5:00 PM
-12975 W. Okeechobee Rd., Units 2-4, Hialeah Gardens, FL 33018
 (305) 820-0805 | info@xclusiveseniorcare.com | xclusiveseniorcare.com
 
-Come see the center before you decide. Call us to schedule a tour.
+Come see either center before you decide. Call us to schedule a tour.
 ```
 
 ---
@@ -93,7 +97,7 @@ README), which is the correct way to run a bilingual profile — not by pasting 
 languages into one box.
 
 ```
-Xclusive Senior Care es un centro de cuidado diurno para adultos con licencia, al servicio de las familias de Hialeah y Hialeah Gardens, Florida. Licencia AHCA #9102.
+Xclusive Senior Care es un centro de cuidado diurno para adultos con licencia, con dos centros al servicio de las familias de Hialeah y Hialeah Gardens, Florida. Licencia AHCA #9102.
 
 Cada día de semana les damos a los adultos mayores un lugar donde pasar el día con propósito, compañía y supervisión profesional — y les damos a sus familias la tranquilidad de ir a trabajar sabiendo que alguien de confianza cuida a su ser querido.
 
@@ -112,11 +116,14 @@ La mayoría de las familias que atendemos pagan $0 a través de Medicaid Long-Te
 100% BILINGÜE
 Todo nuestro equipo habla español e inglés. Ninguna familia recibe un formulario que no pueda leer, ni queda fuera de una conversación sobre su propio padre o madre.
 
+NUESTROS DOS CENTROS
+- Hialeah Gardens: 12975 W. Okeechobee Rd., Units 2-4, Hialeah Gardens, FL 33018
+- Hialeah: [HIALEAH ADDRESS]
+
 De lunes a viernes, de 9:00 AM a 5:00 PM
-12975 W. Okeechobee Rd., Units 2-4, Hialeah Gardens, FL 33018
 (305) 820-0805 | info@xclusiveseniorcare.com | xclusiveseniorcare.com
 
-Venga a conocer el centro antes de decidir. Llámenos para agendar una visita.
+Venga a conocer cualquiera de los dos centros antes de decidir. Llámenos para agendar una visita.
 ```
 
 ---
@@ -131,19 +138,19 @@ Add one Experience entry so the profile links to the Company Page (step 7 in the
 | Employment type | `Self-employed` (or `Full-time` if a person is filling this in) |
 | Company name | `Xclusive Senior Day Care Center, Inc` — pick the Page from the dropdown once it exists |
 | Location | `Hialeah Gardens, Florida, United States` |
-| Start date | `January 2008` — the year the corporation was registered in Florida. **Change it if the center opened its doors in a different year.** |
+| Start date | `January 2008` |
 | Currently working here | Yes |
 
 Description:
 
 ```
-Licensed adult day care serving Hialeah and Hialeah Gardens (AHCA #9102). Registered nurse on site, one caregiver per four seniors, and a 100% bilingual team.
+Licensed adult day care with two locations, serving Hialeah and Hialeah Gardens (AHCA #9102). Registered nurse on site, one caregiver per four seniors, and a 100% bilingual team.
 
 Daily: therapeutic programs, physical exercise, art, music and horticulture, plus hobbies, crafts and outings. A hot USDA-approved meal and two snacks are served every day, and door-to-door transportation is included.
 
 Most families pay $0 through Medicaid Long-Term Care.
 
-Monday to Friday, 9:00 AM to 5:00 PM. Call (305) 820-0805 to schedule a tour.
+Both centers are open Monday to Friday, 9:00 AM to 5:00 PM. Call (305) 820-0805 to schedule a tour.
 ```
 
 ---
@@ -156,16 +163,16 @@ Monday to Friday, 9:00 AM to 5:00 PM. Call (305) 820-0805 to schedule a tour.
 | LinkedIn public URL | `linkedin.com/company/xclusive-senior-care` |
 | Website | `https://xclusiveseniorcare.com` |
 | Industry | `Individual and Family Services` |
-| Company size | `11-50 employees` — **check this against your payroll before saving** |
+| Company size | `11-50 employees` |
 | Company type | `Privately Held` |
-| Year founded | `2008` — same caveat as the Experience start date |
+| Year founded | `2008` |
 | Logo | `images/profile-picture-400x400.png` |
 | Cover image | `images/banner-company-1128x191.png` |
 
-**Tagline** *(limit 120 characters; this is 104)*:
+**Tagline** *(limit 120 characters; this is 109)*:
 
 ```
-Licensed, 100% bilingual adult day care in Hialeah & Hialeah Gardens. RN on site. $0 with Medicaid LTC.
+Licensed, 100% bilingual adult day care. 2 locations: Hialeah & Hialeah Gardens. RN on site. $0 Medicaid LTC.
 ```
 
 **Specialties** — add these one at a time:
@@ -173,6 +180,7 @@ Licensed, 100% bilingual adult day care in Hialeah & Hialeah Gardens. RN on site
 ```
 Adult Day Care
 Senior Care
+Multiple Locations
 Medicaid Long-Term Care
 Bilingual Care (English/Spanish)
 Therapeutic Activity Programs
@@ -187,6 +195,9 @@ Nutrition and Meal Service
 
 1. `12975 W. Okeechobee Rd., Units 2-4, Hialeah Gardens, FL 33018` (mark as HQ)
 2. `[HIALEAH ADDRESS]`, Hialeah, FL
+
+Add both. A Page with two locations shows up in LinkedIn searches for either city,
+so leaving the second one off costs you the Hialeah searches entirely.
 
 For the Page's About box, reuse the English About from section 3.
 
@@ -218,15 +229,15 @@ Healthcare Compliance
 Post this the day the profile goes live, so the page has something on it.
 
 ```
-Our doors have been open in Hialeah Gardens for years, but this is our first day on LinkedIn.
+Our doors have been open in Hialeah and Hialeah Gardens for years, but this is our first day on LinkedIn.
 
-Xclusive Senior Care is a licensed adult day care center (AHCA #9102). A registered nurse is on site, we keep one caregiver for every four seniors, and our whole team is bilingual.
+Xclusive Senior Care is a licensed adult day care center with two locations (AHCA #9102). A registered nurse is on site, we keep one caregiver for every four seniors, and our whole team is bilingual.
 
 Every day includes therapeutic programs, physical exercise, art, music and horticulture, a hot USDA-approved meal with two snacks, and door-to-door transportation.
 
 Most families pay $0 through Medicaid Long-Term Care.
 
-If you are caring for a parent and trying to keep your job at the same time, that is exactly the situation we exist for. Call (305) 820-0805 and come see the center.
+If you are caring for a parent and trying to keep your job at the same time, that is exactly the situation we exist for. Call (305) 820-0805 and come see whichever center is closer to you.
 
 #AdultDayCare #SeniorCare #Hialeah #Miami #Caregivers #Medicaid
 ```
@@ -234,15 +245,15 @@ If you are caring for a parent and trying to keep your job at the same time, tha
 ## 9. First post — Español
 
 ```
-Llevamos años con las puertas abiertas en Hialeah Gardens, pero hoy es nuestro primer día en LinkedIn.
+Llevamos años con las puertas abiertas en Hialeah y Hialeah Gardens, pero hoy es nuestro primer día en LinkedIn.
 
-Xclusive Senior Care es un centro de cuidado diurno para adultos con licencia (AHCA #9102). Contamos con enfermera registrada en el centro, un cuidador por cada cuatro adultos mayores, y todo nuestro equipo es bilingüe.
+Xclusive Senior Care es un centro de cuidado diurno para adultos con licencia, con dos centros (AHCA #9102). Contamos con enfermera registrada en el centro, un cuidador por cada cuatro adultos mayores, y todo nuestro equipo es bilingüe.
 
 Cada día incluye programas terapéuticos, ejercicio físico, arte, música y horticultura, un almuerzo caliente aprobado por USDA con dos meriendas, y transporte puerta a puerta.
 
 La mayoría de las familias pagan $0 a través de Medicaid Long-Term Care.
 
-Si usted cuida a su papá o a su mamá y a la vez trata de mantener su trabajo, esa es exactamente la situación para la que existimos. Llame al (305) 820-0805 y venga a conocer el centro.
+Si usted cuida a su papá o a su mamá y a la vez trata de mantener su trabajo, esa es exactamente la situación para la que existimos. Llame al (305) 820-0805 y venga a conocer el centro que le quede más cerca.
 
 #CuidadoDeAdultos #AdultosMayores #Hialeah #Miami #Cuidadores #Medicaid
 ```

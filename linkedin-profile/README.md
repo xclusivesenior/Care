@@ -24,8 +24,9 @@ it in.
 | `images/banner-company-1128x191.png` | 1128 × 191 | The Company Page cover — **a different size, don't swap them** |
 
 All three are built from facts already on your license and in your email signature:
-AHCA #9102, RN on site, one caregiver per four seniors, meals and transportation
-included, $0 with Medicaid Long-Term Care, (305) 820-0805, Monday–Friday 9–5.
+two locations in Hialeah and Hialeah Gardens, AHCA #9102, RN on site, one caregiver
+per four seniors, meals and transportation included, $0 with Medicaid Long-Term
+Care, (305) 820-0805, Monday–Friday 9–5.
 
 The profile picture is designed for LinkedIn's circular crop — everything sits
 inside the circle, and it still reads at the small size used in the feed.
@@ -100,6 +101,9 @@ Edit intro → **Contact info**:
 - Email: `info@xclusiveseniorcare.com`
 - Address: `12975 W. Okeechobee Rd., Units 2-4, Hialeah Gardens, FL 33018`
 
+The personal profile holds one address. **Both** locations go on the Company Page in
+the next step — that is what makes you findable in searches for either city.
+
 ### 7. Create the Company Page — the piece that's actually missing
 A profile under `/in/` is LinkedIn's format for a *person*. A business belongs on a
 **Company Page**, and running a business on a personal profile is against LinkedIn's
@@ -157,12 +161,17 @@ Chromium automatically, or you can add the path to `CHROME_CANDIDATES` at the to
 
 ---
 
-## What is still yours to check
+## The one thing still missing
 
-- **The Hialeah address.** Only the Hialeah Gardens address is confirmed. Fill in
-  `[HIALEAH ADDRESS]` in PROFILE-COPY.md, or drop the second location.
-- **Year founded — 2008.** That is when the corporation was registered in Florida.
-  If the center opened later, change it in both the Experience entry and the Page.
-- **Company size — "11-50 employees"** is an estimate. Check it against payroll.
-- **Photo authorizations.** See PHOTO-GUIDE.md section 1 before posting any photo of
-  a participant.
+**The street address of the Hialeah location.** Everything else is confirmed and
+written in. Both banners, the About sections in both languages, the headline, the
+Experience entry and the Company Page all say *two locations* — but only the Hialeah
+Gardens street address is filled in, because the Hialeah one isn't recorded anywhere
+I could reach.
+
+Search `[HIALEAH ADDRESS]` in **PROFILE-COPY.md** — it appears in four places
+(English About, Spanish About, the facts table, and the Page's Locations list).
+Type the address in once you have it, or tell me and I'll fill it in for you.
+
+Separately, before posting any photo with a participant in it, read **PHOTO-GUIDE.md
+section 1** — that one is a HIPAA question, not a copy question.
