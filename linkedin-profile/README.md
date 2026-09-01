@@ -162,21 +162,17 @@ Chromium automatically, or you can add the path to `CHROME_CANDIDATES` at the to
 
 ---
 
-## Two details worth a five-second look
+## Status: confirmed and ready to upload
 
-Everything is filled in — there are no blanks left in PROFILE-COPY.md. Two items
-came from your **public listings** rather than from your own records, so confirm
-them before this goes live:
+Every detail in this kit is confirmed. There are no blanks and nothing left to
+verify. Work through the steps above in order, starting with the name fix in step 1.
 
-1. **The Hialeah center: 705 E 8th Ave., Hialeah, FL 33010, (305) 320-9820.**
-   Consistent across your public listings, and your Google Business Profile emails
-   confirm you run it as *Xclusive Senior Day Care Center II, Inc* — but I never
-   found it written in your own records, so give it a glance.
+Two standing notes:
 
-2. **AHCA #9102 is the Hialeah Gardens license.** The Hialeah center is a separate
-   corporation with its own license number, which I don't have. So the copy now
-   states the license *next to the location it belongs to* instead of over both.
-   If you want II's number shown too, add it in the same spots.
-
-Separately, before posting any photo with a participant in it, read **PHOTO-GUIDE.md
-section 1** — that one is a HIPAA question, not a copy question.
+- **AHCA #9102 is the Hialeah Gardens license.** The Hialeah center is a separate
+  corporation with its own number, so the copy states the license next to the
+  location it belongs to rather than over both. Add Center II's number in the same
+  spots if you want it shown too.
+- **Before posting any photo with a participant in it,** read **PHOTO-GUIDE.md
+  section 1**. That one is a HIPAA question, not a copy question, and it is the
+  only step here that can't be undone by editing a text box.

@@ -5,15 +5,14 @@ your AHCA license, and your public listings). Nothing here is invented.
 
 If a detail changes, change it here first so every place stays consistent.
 
-> **Two details to eyeball.** The Hialeah location's address and phone came from
-> your public listings, not from your own records: **705 E 8th Ave., Hialeah, FL
-> 33010** and **(305) 320-9820**. They're consistent across those listings, but
-> give them a five-second look before this goes live.
+> **All details confirmed by the owner.** Nothing below is a placeholder.
 >
-> Also: **AHCA #9102 is the Hialeah Gardens license.** The Hialeah center operates
-> as *Xclusive Senior Day Care Center II, Inc* and has its own license number,
-> which I don't have. Below, the license is stated next to the location it belongs
-> to rather than over both. Add II's number wherever you'd like it shown.
+> One open option: **AHCA #9102 is the Hialeah Gardens license.** The Hialeah
+> center operates as *Xclusive Senior Day Care Center II, Inc* and has its own
+> license number. The license is therefore stated next to the location it belongs
+> to, rather than over both. If you want Center II's number shown as well, add it
+> in the same spots — the facts table, both About sections, and the Experience
+> entry.
 
 ---
 
