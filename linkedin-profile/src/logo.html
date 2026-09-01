@@ -1,0 +1,66 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  /* 400x400. LinkedIn masks profile and company pictures to a CIRCLE, so the
+     whole mark stays inside a 280px ring — comfortably within the crop. */
+  html, body { width: 400px; height: 400px; }
+  .field     { width: 400px; height: 400px; display: grid; place-items: center; }
+  /* The shared bottom rule is meaningless once LinkedIn masks this to a circle. */
+  .field::after { display: none; }
+
+  .mark { position: relative; display: grid; place-items: center; }
+
+  .ring {
+    position: absolute;
+    width: 288px; height: 288px;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    opacity: 0.5;
+  }
+  .ring.inner { width: 268px; height: 268px; border-width: 1px; opacity: 0.3; }
+
+  /* Vertical stack: lettermark, hairline, wordmark — nothing overlaps. */
+  .stack { display: flex; flex-direction: column; align-items: center; }
+
+  .letter {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 132px;
+    line-height: 0.86;
+    color: var(--gold);
+    letter-spacing: -3px;
+  }
+
+  .divider { width: 62px; height: 2px; background: var(--gold); opacity: 0.9; margin: 20px 0 16px; }
+
+  .wordmark {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 4.5px;
+    color: var(--cream);
+    text-indent: 4.5px; /* balance the trailing letter-space */
+  }
+  .tagline {
+    margin-top: 6px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 11.5px;
+    letter-spacing: 3.6px;
+    color: var(--muted);
+    text-indent: 3.6px;
+  }
+</style>
+<div class="field">
+  <div class="mark">
+    <div class="ring"></div>
+    <div class="ring inner"></div>
+    <div class="stack">
+      <div class="letter">X</div>
+      <div class="divider"></div>
+      <div class="wordmark">XCLUSIVE</div>
+      <div class="tagline">SENIOR CARE</div>
+    </div>
+  </div>
+</div>

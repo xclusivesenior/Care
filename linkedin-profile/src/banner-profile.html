@@ -1,0 +1,68 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  /* 1584x396 — LinkedIn personal-profile cover.
+     Two zones are unsafe and stay empty:
+       - bottom-left (x < ~330): the profile photo circle overlaps it
+       - the outer ~8% left/right: cropped away on narrow mobile screens */
+  html, body { width: 1584px; height: 396px; }
+  .field     { width: 1584px; height: 396px; }
+
+  .watermark { left: 26px; top: -74px; font-size: 460px; }
+
+  .layout {
+    position: absolute; inset: 0;
+    display: flex; align-items: center;
+    padding-left: 400px; padding-right: 64px;
+    gap: 48px;
+  }
+
+  .main { flex: 1 1 auto; }
+
+  .eyebrow { font-size: 17px; letter-spacing: 3.4px; }
+  .name    { font-size: 60px; line-height: 1.02; margin: 13px 0 0; letter-spacing: -0.5px; }
+  .sub     { font-size: 21px; margin-top: 11px; letter-spacing: 0.1px; white-space: nowrap; }
+  .rule    { width: 74px; height: 3px; margin: 20px 0 18px; }
+
+  .chips { gap: 9px; }
+  .chip  { font-size: 15px; padding: 7px 13px; border-radius: 100px; letter-spacing: 0.2px; }
+
+  /* Contact block, right-aligned, separated by a hairline. */
+  .contact {
+    flex: 0 0 auto;
+    text-align: right;
+    padding-left: 48px;
+    border-left: 1px solid rgba(250,246,238,0.18);
+  }
+  .contact .label { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); }
+  .contact .phone {
+    font-family: "Lora", serif; font-weight: 700;
+    font-size: 36px; color: var(--gold); margin-top: 7px; white-space: nowrap;
+  }
+  .contact .web  { font-size: 18px; color: var(--cream); margin-top: 14px; white-space: nowrap; }
+  .contact .hours{ font-size: 15px; color: var(--muted); margin-top: 7px; white-space: nowrap; }
+</style>
+<div class="field">
+  <div class="watermark">X</div>
+  <div class="layout">
+    <div class="main">
+      <div class="eyebrow">Licensed Adult Day Care Center &middot; AHCA #9102</div>
+      <h1 class="name">Xclusive Senior Care</h1>
+      <div class="sub">Hialeah &amp; Hialeah Gardens, Florida &middot; 100% Bilingual / Bilingüe</div>
+      <hr class="rule">
+      <div class="chips">
+        <span class="chip">Registered nurse on site</span>
+        <span class="chip">1 caregiver per 4 seniors</span>
+        <span class="chip">Meals &amp; transportation included</span>
+        <span class="chip gold">$0 with Medicaid Long-Term Care</span>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="label">Call us today</div>
+      <div class="phone">(305) 820-0805</div>
+      <div class="web">xclusiveseniorcare.com</div>
+      <div class="hours">Monday&ndash;Friday &middot; 9:00 AM&ndash;5:00 PM</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>
+  /* 1128x191 — LinkedIn Company Page cover. Much shorter than the personal
+     banner, so this carries less: identity, place, phone. The company logo
+     overlaps the lower-left, so content starts right of it. */
+  html, body { width: 1128px; height: 191px; }
+  .field     { width: 1128px; height: 191px; }
+
+  .watermark { left: 18px; top: -50px; font-size: 236px; }
+
+  .layout {
+    position: absolute; inset: 0;
+    display: flex; align-items: center;
+    padding-left: 258px; padding-right: 48px;
+    gap: 36px;
+  }
+  .main { flex: 1 1 auto; }
+
+  .eyebrow { font-size: 12px; letter-spacing: 2.6px; }
+  .name    { font-size: 36px; line-height: 1.05; margin: 8px 0 0; letter-spacing: -0.3px; }
+  .sub     { font-size: 15px; margin-top: 8px; }
+
+  .contact {
+    flex: 0 0 auto; text-align: right;
+    padding-left: 34px;
+    border-left: 1px solid rgba(250,246,238,0.18);
+  }
+  .contact .phone {
+    font-family: "Lora", serif; font-weight: 700;
+    font-size: 27px; color: var(--gold); white-space: nowrap;
+  }
+  .contact .web { font-size: 14px; color: var(--muted); margin-top: 8px; white-space: nowrap; }
+</style>
+<div class="field">
+  <div class="watermark">X</div>
+  <div class="layout">
+    <div class="main">
+      <div class="eyebrow">Licensed Adult Day Care &middot; AHCA #9102</div>
+      <h1 class="name">Xclusive Senior Care</h1>
+      <div class="sub">Hialeah &amp; Hialeah Gardens, FL &middot; 100% Bilingual &middot; $0 with Medicaid LTC</div>
+    </div>
+    <div class="contact">
+      <div class="phone">(305) 820-0805</div>
+      <div class="web">xclusiveseniorcare.com</div>
+    </div>
+  </div>
+</div>

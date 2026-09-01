@@ -1,0 +1,86 @@
+/* Xclusive Senior Care — LinkedIn brand sheet
+   Change the values in :root to restyle every asset, then re-run build.py. */
+
+@font-face { font-family: "Lora"; src: url("fonts/Lora-Bold.ttf") format("truetype"); font-weight: 700; }
+@font-face { font-family: "Lora"; src: url("fonts/Lora-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Work Sans"; src: url("fonts/WorkSans-Bold.ttf") format("truetype"); font-weight: 700; }
+@font-face { font-family: "Work Sans"; src: url("fonts/WorkSans-Regular.ttf") format("truetype"); font-weight: 400; }
+
+:root {
+  --navy:    #0E3A4F;  /* primary field — trust, clinical calm */
+  --navy-lo: #072634;  /* deeper navy for the gradient floor */
+  --teal:    #2E7E92;  /* supporting tint */
+  --gold:    #D6A03D;  /* accent — the "Xclusive" warmth */
+  --gold-dk: #A97A24;  /* pressed/darker gold */
+  --cream:   #FAF6EE;  /* primary text on navy */
+  --muted:   #A8C4CE;  /* secondary text on navy */
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  background: var(--navy);
+  font-family: "Work Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* The field every asset sits on: deep navy, warm glow upper-right,
+   with a large watermark X anchored left of the content. */
+/* Sized explicitly in px by each template: Chromium's --window-size reserves
+   ~87px of window chrome, so the viewport is shorter than the screenshot. */
+.field {
+  position: absolute;
+  top: 0; left: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 150% at 82% -20%, rgba(46,126,146,0.55) 0%, rgba(46,126,146,0) 55%),
+    radial-gradient(90% 120% at 8% 120%, rgba(214,160,61,0.16) 0%, rgba(214,160,61,0) 60%),
+    linear-gradient(160deg, var(--navy) 0%, var(--navy-lo) 100%);
+}
+
+/* Hairline gold rule along the bottom edge — reads as a finished frame. */
+.field::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold) 0%, rgba(214,160,61,0.15) 55%, rgba(214,160,61,0) 100%);
+}
+
+.watermark {
+  position: absolute;
+  font-family: "Lora", serif;
+  font-weight: 700;
+  color: rgba(250,246,238,0.05);
+  line-height: 0.78;
+  user-select: none;
+}
+
+.eyebrow {
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.name { font-family: "Lora", serif; font-weight: 700; color: var(--cream); }
+.sub  { color: var(--muted); }
+
+.rule { background: var(--gold); border: 0; }
+
+/* Fact chips — the proof points that make the page look run by professionals. */
+.chips { display: flex; flex-wrap: wrap; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  color: var(--cream);
+  background: rgba(250,246,238,0.07);
+  border: 1px solid rgba(250,246,238,0.16);
+  white-space: nowrap;
+}
+.chip.gold {
+  color: #23180A;
+  background: var(--gold);
+  border-color: var(--gold);
+  font-weight: 700;
+}
