@@ -1,0 +1,31 @@
+# Render Blueprint — deploys the GHL -> Telegram bridge to a public URL.
+#
+# Use it from a browser (phone included):
+#   1. render.com -> New -> Blueprint -> connect this GitHub repo
+#   2. Render reads this file and creates the service
+#   3. Paste TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID when prompted
+#
+# See PHONE-PLAYBOOK.md for the full walkthrough.
+
+services:
+  - type: web
+    name: ghl-telegram-bridge
+    runtime: node
+    plan: free            # change to "starter" ($7/mo) so it never sleeps
+    rootDir: ghl-telegram-bridge
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /    # GET / is a public health check, no secret needed
+    autoDeploy: true      # every push to the tracked branch redeploys
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      # Secrets: you paste these in the Render dashboard, never in git.
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      # Render generates a random value; copy it into your GHL webhook URL
+      # as ?key=THAT_VALUE so only GHL can post to the bridge.
+      - key: WEBHOOK_SECRET
+        generateValue: true
