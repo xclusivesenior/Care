@@ -111,6 +111,28 @@ A full log is written to `%TEMP%\ClaudeRestore-<timestamp>.log`.
 
 ---
 
+## Verified before it reached you
+
+`Restore-Classic.ps1` and the paste-able one-liner both parse clean under
+PowerShell 7.6.6, and the one-liner's logic was run against mocked Windows
+cmdlets in three scenarios (`test/Test-OneLiner.ps1`):
+
+| Scenario | Prints | Settings backed up | Folders removed | Opens download |
+|---|---|---|---|---|
+| Pending reboot | `REBOOT FIRST` | — nothing touched — | no | no |
+| Clean run | `PASS` | yes | yes | yes |
+| Folder stays locked | `INCOMPLETE` | yes | no | **no** |
+
+The two that matter: on a pending reboot it changes nothing at all, and when a
+folder is still locked it refuses to tell you the install will work.
+
+What could not be tested here: this container is Linux, so the Windows-only
+calls (`Get-AppxPackage`, the registry read, the elevation prompt) were mocked
+rather than exercised for real. They are standard calls, but the first true
+end-to-end run is yours.
+
+---
+
 ## Related
 
 `claude-desktop-fix/` on the `claude/app-install-error-0x80073d05-5ce2km`
