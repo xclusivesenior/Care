@@ -7,6 +7,26 @@ Everything below is done in the GHL web app (phone browser works).
 
 ---
 
+## Step 0 — Make sure Q7 is on the Meta form
+
+If the live SV form has only 6 questions, add Q7 (`contact_confirmation`)
+first. **Meta won't let you edit a published Instant Form**, so:
+
+1. **Meta Business Suite → All tools → Instant Forms**. Find the SV form,
+   open the **⋯** menu and choose **Duplicate**.
+2. In the copy, go to **Questions → Add question → Multiple choice**:
+   - Question: `I confirm I am a serious buyer and want to be contacted about this opportunity`
+   - Answers: `Yes, contact me` / `No`
+   - Under **Field name**, set it to `contact_confirmation` if that option is shown
+3. Check that the other 6 questions, the privacy policy and the thank-you screen
+   carried over. Then **Publish**.
+4. **Ads Manager → the SV ad → Edit → Instant form**: switch to the new form and
+   click **Publish**.
+5. In GHL, map the **new** form (Step 2). GHL treats it as a different form, so
+   the old mapping doesn't carry over.
+
+---
+
 ## Step 1 — Create the 7 custom fields
 
 **Settings → Custom Fields → + Add Field.** Put them all in one folder called
