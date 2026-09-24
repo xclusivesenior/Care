@@ -7,6 +7,24 @@ Everything below is done in the GHL web app (phone browser works).
 
 ---
 
+## Quick fix — map Q7 (contact_confirmation) in GHL
+
+In GHL go to **Settings → Integrations → Facebook** → select the **SV page** →
+select the **lead form** → **Field Mapping**.
+
+Add a new row:
+
+| Facebook field         | GHL field            |
+|------------------------|----------------------|
+| `contact_confirmation` | Contact Confirmation |
+
+**Save.** That maps Q7.
+
+> If "Contact Confirmation" isn't in the GHL field list, create it first under
+> **Settings → Custom Fields** (Single Line), then add the row.
+
+---
+
 ## Step 0 — Make sure Q7 is on the Meta form
 
 If the live SV form has only 6 questions, add Q7 (`contact_confirmation`)
